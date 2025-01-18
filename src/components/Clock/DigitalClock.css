@@ -1,0 +1,50 @@
+.digital-clock {
+  font-family: 'Digital-7', monospace;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  background: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark-theme .digital-clock {
+  background: var(--background-dark);
+  color: #333; /* 深色模式下的时间颜色 */
+}
+
+.time {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.date {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+  opacity: 0.8;
+}
+
+.timezone {
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+  opacity: 0.6;
+}
+
+/* 大小变体 */
+.digital-clock.small {
+  font-size: 2rem;
+}
+
+.digital-clock.large {
+  font-size: 4rem;
+}
+
+.digital-clock.small .time {
+  font-size: 3rem;
+}
+
+.digital-clock.large .time {
+  font-size: 5rem;
+} 

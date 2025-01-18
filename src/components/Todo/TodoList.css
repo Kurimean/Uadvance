@@ -1,0 +1,21 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.todo-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-light);
+  background: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .todo-empty {
+  color: var(--text-dark);
+  background: var(--background-dark);
+} 

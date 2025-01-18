@@ -1,0 +1,114 @@
+.todo-item {
+  background: var(--background-light);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.todo-item.completed {
+  opacity: 0.7;
+}
+
+.todo-item-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo-title {
+  flex: 1;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.priority-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.todo-description {
+  margin: 0.5rem 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.todo-details {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.todo-category,
+.todo-due-date {
+  color: var(--secondary-color);
+}
+
+.todo-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.progress-slider {
+  flex: 1;
+  height: 4px;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  min-width: 3rem;
+}
+
+.todo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.delete-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--danger-color);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.todo-item:hover .delete-button {
+  opacity: 1;
+}
+
+.dark-theme .todo-item {
+  background: var(--background-dark);
+}
+
+.dark-theme .todo-description {
+  color: var(--text-dark);
+} 

@@ -1,0 +1,67 @@
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input,
+.todo-textarea,
+.todo-select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.todo-textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.todo-input:focus,
+.todo-textarea:focus,
+.todo-select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.todo-submit {
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-submit:hover {
+  background-color: var(--secondary-color);
+}
+
+.form-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-row > * {
+  flex: 1;
+}
+
+.dark-theme .todo-form {
+  background: var(--background-dark);
+}
+
+.dark-theme .todo-input,
+.dark-theme .todo-textarea,
+.dark-theme .todo-select {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+} 

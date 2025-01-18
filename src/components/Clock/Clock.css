@@ -1,0 +1,30 @@
+.clock-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.clock-wrapper.small {
+  transform: scale(0.8);
+}
+
+.clock-wrapper.medium {
+  transform: scale(1);
+}
+
+.clock-wrapper.large {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .clock-wrapper {
+    padding: 0.5rem;
+  }
+  
+  .clock-wrapper.large {
+    transform: scale(1);
+  }
+} 

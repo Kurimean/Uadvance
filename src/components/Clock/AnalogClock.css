@@ -1,0 +1,19 @@
+.analog-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.clock-canvas {
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: var(--background-light);
+}
+
+@media (max-width: 768px) {
+  .clock-canvas {
+    width: 200px;
+    height: 200px;
+  }
+} 
